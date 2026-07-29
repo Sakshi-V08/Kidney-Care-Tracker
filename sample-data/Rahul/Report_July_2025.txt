@@ -1,0 +1,14 @@
+Hospital: City Kidney Care Lab
+Doctor: Dr. Mehta
+Report Date: 20/07/2025
+
+Creatinine 2.6 mg/dL (0.6-1.3)
+Blood Urea 52 mg/dL (15-40)
+eGFR 29 mL/min/1.73m2
+Potassium 4.5 mEq/L (3.5-5.0)
+Sodium 137 mEq/L (135-145)
+Hemoglobin 10.8 g/dL (12-17.5)
+Protein Creatinine Ratio 380 mg/g (0-150)
+HbA1c 7.4 % (4.0-5.6)
+Systolic 142 mmHg
+Diastolic 88 mmHg

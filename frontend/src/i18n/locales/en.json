@@ -1,0 +1,169 @@
+{
+  "app": {
+    "name": "KHIS",
+    "fullName": "Kidney Health Intelligence System",
+    "tagline": "Educational kidney health insights from your lab reports"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "patients": "Patients",
+    "upload": "Upload Reports",
+    "trends": "Trends",
+    "analysis": "AI Analysis",
+    "summary": "Health Summary",
+    "chat": "AI Assistant",
+    "notifications": "Notifications",
+    "trackers": "Trackers",
+    "export": "Export",
+    "settings": "Settings",
+    "admin": "Admin",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Sign in",
+    "register": "Create account",
+    "username": "Username",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phone": "Phone",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "welcomeBack": "Welcome back",
+    "createAccount": "Join KHIS",
+    "loginSubtitle": "Sign in to view your kidney health insights",
+    "registerSubtitle": "Create an account to track labs and trends"
+  },
+  "dashboard": {
+    "title": "Kidney Health Dashboard",
+    "kidneyStage": "Kidney Stage",
+    "riskLevel": "Risk Level",
+    "overallScore": "Overall Score",
+    "recentReports": "Recent Reports",
+    "abnormalParams": "Abnormal Parameters",
+    "trendsSnippet": "Trend Snapshot",
+    "upcomingTests": "Upcoming Tests",
+    "viewAll": "View all",
+    "noData": "No data available yet",
+    "uploadCta": "Upload a report to get started"
+  },
+  "patients": {
+    "title": "Patients",
+    "folders": "Patient Folders",
+    "search": "Search patients…",
+    "reports": "Reports",
+    "stage": "Stage",
+    "risk": "Risk",
+    "score": "Score",
+    "folder": "Folder",
+    "detail": "Patient Detail",
+    "noPatients": "No patients found"
+  },
+  "reports": {
+    "upload": "Upload Lab Reports",
+    "uploadHint": "Drag & drop PDF or image files here, or click to browse",
+    "detail": "Report Detail",
+    "extractedLabs": "Extracted Laboratory Results",
+    "status": "Status",
+    "hospital": "Hospital",
+    "doctor": "Doctor",
+    "date": "Report date",
+    "processing": "Processing…",
+    "acceptedTypes": "PDF, PNG, JPG, JPEG, WEBP"
+  },
+  "trends": {
+    "title": "Lab Trends",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "selectParams": "Parameters"
+  },
+  "analysis": {
+    "title": "AI Medical Analysis",
+    "perInvestigation": "Analysis by investigation",
+    "significance": "Clinical significance",
+    "recommendations": "Recommendations"
+  },
+  "summary": {
+    "title": "AI Health Summary",
+    "assessment": "Overall assessment",
+    "findings": "Key findings",
+    "preventive": "Preventive suggestions",
+    "lifestyle": "Lifestyle tips",
+    "followUp": "Follow-up notes"
+  },
+  "chat": {
+    "title": "AI Health Assistant",
+    "placeholder": "Ask about your labs, stage, or lifestyle…",
+    "send": "Send",
+    "thinking": "Thinking…",
+    "empty": "Ask a question about your kidney health reports."
+  },
+  "notifications": {
+    "title": "Notifications",
+    "markAllRead": "Mark all as read",
+    "empty": "You're all caught up",
+    "unread": "Unread"
+  },
+  "trackers": {
+    "title": "Health Trackers",
+    "bp": "Blood Pressure",
+    "weight": "Weight",
+    "water": "Water Intake",
+    "medicine": "Medicine Reminders",
+    "appointments": "Appointments",
+    "diet": "Diet Planner",
+    "add": "Add",
+    "goal": "Daily goal",
+    "systolic": "Systolic",
+    "diastolic": "Diastolic"
+  },
+  "export": {
+    "title": "Export Data",
+    "pdf": "Export PDF",
+    "csv": "Export CSV",
+    "excel": "Export Excel",
+    "description": "Download your lab history, trends, and summaries",
+    "success": "Export started",
+    "range": "Date range"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "darkMode": "Dark mode",
+    "profile": "Profile",
+    "save": "Save changes",
+    "saved": "Settings saved",
+    "voice": "Voice assistant"
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "users": "User management",
+    "multiPatient": "Multi-patient overview",
+    "stats": "System statistics"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "required": "Required",
+    "mockData": "Showing sample data (API unavailable)"
+  },
+  "disclaimer": {
+    "title": "Medical Disclaimer",
+    "text": "This application provides educational insights based on uploaded laboratory reports. It does not diagnose diseases or replace professional medical advice. Patients should always consult a qualified healthcare provider for diagnosis and treatment decisions."
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Enter a valid email",
+    "passwordMin": "Password must be at least 8 characters",
+    "passwordMatch": "Passwords do not match",
+    "usernameMin": "Username must be at least 3 characters"
+  }
+}

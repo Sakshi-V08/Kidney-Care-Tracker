@@ -1,0 +1,11 @@
+Hospital: Metro Diagnostics
+Doctor: Dr. Sharma
+Report Date: 15/11/2025
+
+Creatinine 1.2 mg/dL (0.6-1.3)
+Blood Urea 30 mg/dL (15-40)
+eGFR 68 mL/min/1.73m2
+Potassium 4.1 mEq/L (3.5-5.0)
+Sodium 139 mEq/L (135-145)
+Hemoglobin 12.9 g/dL (12-17.5)
+HbA1c 5.5 % (4.0-5.6)
