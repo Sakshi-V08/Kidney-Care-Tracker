@@ -20,6 +20,9 @@ environ.Env.read_env(BASE_DIR / ".env")
 SECRET_KEY = env("SECRET_KEY", default="dev-insecure-change-me-khis-2025")
 DEBUG = env("DEBUG")
 ALLOWED_HOSTS = env("ALLOWED_HOSTS")
+# Vercel preview/production hosts
+if ".vercel.app" not in ALLOWED_HOSTS:
+    ALLOWED_HOSTS = list(ALLOWED_HOSTS) + [".vercel.app"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
