@@ -1,6 +1,7 @@
 """
 Django settings for Kidney Health Intelligence System (KHIS).
 """
+import os
 from datetime import timedelta
 from pathlib import Path
 
@@ -83,10 +84,16 @@ TEMPLATES = [
     },
 ]
 
+# On Vercel the filesystem is read-only except /tmp
+_default_sqlite = (
+    "sqlite:////tmp/khis.sqlite3"
+    if os.environ.get("VERCEL")
+    else f"sqlite:///{BASE_DIR / 'db.sqlite3'}"
+)
 DATABASES = {
     "default": env.db(
         "DATABASE_URL",
-        default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",
+        default=_default_sqlite,
     )
 }
 
@@ -106,7 +113,14 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
+    },
+}
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
@@ -176,9 +190,11 @@ FIELD_ENCRYPTION_KEY = env(
 )
 
 if not DEBUG:
-    SECURE_SSL_REDIRECT = env.bool("SECURE_SSL_REDIRECT", default=True)
+    # Behind Vercel’s proxy; avoid redirect loops unless explicitly enabled
+    SECURE_SSL_REDIRECT = env.bool("SECURE_SSL_REDIRECT", default=False)
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
+    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
     SECURE_HSTS_SECONDS = 31536000
     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
